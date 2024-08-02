@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+    <title>W3Schools</title>
+    <style>
+        .nav-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px;
+            padding: 8px;
+            background-color: white;        
+        }
+        .nav-1{
+            display: flex;
+        }
+        .nav-1 > .nav-text1, .nav-2 > .nav-text2{
+            font-size: 18px;
+            /* position: relative;
+            top: 10px; */
+            margin-left: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .icon{
+            padding-top: 10px;
+
+        }
+        .nav-text1:hover{
+            background-color: green;
+            color: white;
+        }
+        .nav-text2:hover{
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+        #input-box{
+            border-radius: 20px;
+            border: 1px solid;
+            border-color: gray;
+            width: 150px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            left: 520px;
+        }
+        #input-box::placeholder{
+            font-style: italic;
+            padding: 8px;
+        }
+        .nav-2{
+            display: flex;
+        }
+        #sign-up{
+            background-color: green;
+            border-radius: 20px;
+            width: 80px;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            right: 120px;
+            color: white;
+        }
+        #sign-up:hover{
+            opacity: 0.75;
+        }
+        #login{
+            background-color: rgb(190, 230, 190);
+            border-radius: 20px;
+            width: 80px;
+            text-align: center;
+            position: absolute;
+            right: 40px;
+        }
+        #login:hover{
+            background-color: green;
+            color: white;
+        }
+      
+        .icon-1{
+            position: absolute;
+            right: 510px;
+        }
+        .icon-2{
+            position: absolute;
+            right: 430px;
+        }
+        .icon-3{
+            position: absolute;
+            right: 335px;
+        }
+        #plus{
+            position: absolute;
+            right: 460px;
+        }
+        #space{
+            position: absolute;
+            right: 360px;
+        }
+        #cart{
+            position: absolute;
+            right: 220px;
+        }
+        .nav-bar-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 30px;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            background-color: black;
+            color: white;    
+            margin: 0px;
+        }
+        .list{
+            padding: 10px;
+            font-size: 14px;
+            font-family:sans-serif;
+        }
+        .list:hover{
+            cursor: pointer;
+        }
+        
+        .html-page{
+            background-color: lightblue;
+            width: 100%;
+            height: 500px;
+            position: relative;
+            top: -22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        
+        
+     
+        
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav class="nav-1">
+          
+                <img src="./logo.jpeg" alt="" width="40px">
+
+            <a href="#" class="nav-text1">Tutorials</a><i class="fa-solid fa-sort-down icon"></i>
+            <a href="#" class="nav-text1">Exercises</a><i class="fa-solid fa-sort-down icon"></i>
+            <a href="#" class="nav-text1">Certificates</a><i class="fa-solid fa-sort-down icon"></i>
+            <a href="#" class="nav-text1">Services</a> <i class="fa-solid fa-sort-down icon"></i></nav>
+
+            <input type="text" placeholder="Search" id="input-box" >
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute; top: 30px;font-size: 14px; left: 650px;"></i>
+            
+            <i class="fa-solid fa-circle-half-stroke" style="position: absolute; top: 30px;font-size: 14px;right: 600px;"></i>   
+        </nav>   
+        <nav class="nav-2"> 
+            <a href="#" class="nav-text2 nav-plus" id="plus">Plus</a><i class="fa-solid fa-wand-sparkles icon icon-1" style="color: #d658bb;"></i>
+            <a href="#" class="nav-text2 nav-plus" id="space">Spaces</a><i class="fa-solid fa-shuttle-space icon icon-2" style="color: #d658bb;"></i></a>
+            <a href="#" class="nav-text2 nav-plus" id="cart" >Get Certified</a><i class="fa-solid fa-cart-shopping icon icon-3" style="color: #d658bb;"></i>
+            <a href="#" class="nav-text2" id="sign-up">Sign Up</a>
+            <a href="#" class="nav-text2" id="login">Login</a>
+        </nav>
+    </div>
+    <div class="">
+        <ul type="none" class="nav-bar-2 list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>SQL</li>
+            <li>PYTHON</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>HOW</li>
+            <li>W3.CSS</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JQUERY</li>
+            <li>EXCEL</li>
+            <li>XML</li>
+            <li>DJANGO</li>
+            <li>NUMPY</li>
+            <li>PANDAS</li>
+            <li>NODEJS</li>
+            <li>R</li>
+            <li>TYPESCRIPT</li>
+            <li>ANGULAR</li>
+            <li>GIT</li>
+            <li>POSTGRESQL</li>
+            <li>MONGODB</li>
+            <li>ASP</li>
+            <li>AI</li>
+            <li>GO</li>
+            <li>KOTLIN</li>
+            <li>SASS</li>
+        </ul>
+    </div>
+    
+
+ 
+</body>
+</html>
+
